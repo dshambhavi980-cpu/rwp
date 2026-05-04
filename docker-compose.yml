@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    container_name: kinematic-activity-app
+    ports:
+      - "8501:8501"
+    environment:
+      - STREAMLIT_SERVER_PORT=8501
+      - STREAMLIT_SERVER_ADDRESS=0.0.0.0
+    restart: unless-stopped
+    volumes:
+      # Optional: Mount current directory to /app for live reloading during dev
+      # - .:/app
+      - model_cache:/root/.config/Ultralytics
+
+volumes:
+  model_cache:

@@ -1,0 +1,13 @@
+streamlit==1.45.1
+streamlit-webrtc==0.50.1
+numpy==1.26.4
+pandas==2.2.3
+opencv-python-headless==4.10.0.84
+av==12.3.0
+aiortc==1.10.1
+tensorflow-cpu==2.16.1
+keras==3.3.3
+ultralytics==8.3.146
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch
+torchvision
